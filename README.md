@@ -1,12 +1,18 @@
 <div align="center">
 
-<img src="favicon.svg" width="64" height="64" alt="Site logo" />
-
-# Shahzad Portfolio
+# Nadia Reyes Portfolio
 
 ### A responsive, accessible, framework-free frontend interface
 
 Built for **DecodeLabs — Full Stack Development Internship, Project 1: The Responsive Architecture**
+
+</div>
+
+<br />
+
+<div align="center">
+  <img src="assets/screenshots/desktop.png" alt="Desktop view of the Nadia Reyes portfolio site" width="100%" />
+</div>
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -17,14 +23,6 @@ Built for **DecodeLabs — Full Stack Development Internship, Project 1: The Res
 [![Responsive](https://img.shields.io/badge/Responsive-Mobile--First-3D6C79?style=flat-square)](#-responsive-breakpoints)
 [![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%20AA-2E7D32?style=flat-square)](#-accessibility)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](#-contributing)
-
-</div>
-
-<br />
-
-<div align="center">
-  <img src="assets/screenshots/desktop.png" alt="Desktop view of the Nadia Reyes portfolio site" width="100%" />
-</div>
 
 <br />
 
