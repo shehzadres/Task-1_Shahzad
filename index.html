@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nadia Reyes — Full-Stack Developer &amp; Design Engineer</title>
+  <meta name="description" content="Portfolio of Nadia Reyes, a full-stack developer who builds fast, accessible, semantic web interfaces." />
+  <meta name="theme-color" content="#7A5F49" />
+
+  <!-- Open Graph / Twitter preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nadia Reyes — Full-Stack Developer &amp; Design Engineer" />
+  <meta property="og:description" content="Responsive, accessible interfaces built with semantic HTML, CSS Grid/Flexbox, and vanilla JavaScript." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Nadia Reyes, home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 3 L28 27 H4 Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M16 13 L21.5 27 H10.5 Z" fill="currentColor" opacity="0.35"/>
+          </svg>
+        </span>
+        Nadia Reyes
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="5" y1="5" x2="19" y2="19"/>
+          <line x1="19" y1="5" x2="5" y2="19"/>
+        </svg>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <p class="eyebrow">Full-Stack Developer · Design Engineer</p>
+        <h1>Building the digital<br>entry point of your product.</h1>
+        <p class="hero-lede">
+          I design and build responsive, accessible interfaces — from semantic HTML foundations
+          to the small interactions that make software feel considered.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-ghost">Start a Project</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Years building</dt><dd>7</dd></div>
+          <div><dt>Shipped products</dt><dd>32</dd></div>
+          <div><dt>Avg. Lighthouse score</dt><dd>98</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-heading">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 id="work-heading">Selected Work</h2>
+          <p>A few projects, filtered by discipline.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-chip" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="filter-chip" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button type="button" class="filter-chip" data-filter="design" aria-pressed="false">Design</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+
+          <article class="project-card" data-category="web">
+            <div class="project-thumb project-thumb--a" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-tag">Web App</span>
+              <h3>Harbor — Booking Dashboard</h3>
+              <p>A responsive scheduling dashboard built with semantic HTML, CSS Grid, and fluid typography.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="design">
+            <div class="project-thumb project-thumb--b" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-tag">Design System</span>
+              <h3>Moss — Component Library</h3>
+              <p>A token-based design system: 2 type families, warm neutral palette, WCAG AA everywhere.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="mobile">
+            <div class="project-thumb project-thumb--c" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-tag">Mobile-First</span>
+              <h3>Tidal — Journal PWA</h3>
+              <p>An installable journaling app, built mobile-first with container queries and offline support.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-thumb project-thumb--d" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-tag">Web App</span>
+              <h3>Ledger — Expense Tracker</h3>
+              <p>Accessible data tables and charts, keyboard-navigable end to end, no framework required.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="design">
+            <div class="project-thumb project-thumb--e" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-tag">Brand + UI</span>
+              <h3>Fernwood — Studio Site</h3>
+              <p>A marketing site with editorial typography and a grayscale-first design process.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="mobile">
+            <div class="project-thumb project-thumb--f" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-tag">Mobile-First</span>
+              <h3>Basecamp Trail — Hiking Log</h3>
+              <p>Touch-first controls sized to 44px minimum, tested across five breakpoints.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="empty-state" id="emptyState" hidden>No projects in this category yet — try another filter.</p>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="section-inner about-grid">
+        <div class="about-copy">
+          <h2 id="about-heading">The web is a dynamic, inclusive information system.</h2>
+          <p>
+            I studied full-stack development the way it's meant to be learned: fundamentals first.
+            Semantic HTML for structure, CSS Grid and Flexbox for layout, vanilla JavaScript for
+            behavior — before ever reaching for a framework. That order stuck, and it still shows
+            in the way I build.
+          </p>
+          <p>
+            Every project starts in grayscale. If the hierarchy doesn't hold without color, color
+            won't save it. Then comes a warm, grounded palette, fluid type with <code>clamp()</code>,
+            and an accessibility pass that isn't an afterthought.
+          </p>
+        </div>
+        <ul class="about-facts">
+          <li><span class="fact-num">01</span> Semantic-first markup</li>
+          <li><span class="fact-num">02</span> Mobile-first, 3-tier breakpoints</li>
+          <li><span class="fact-num">03</span> WCAG AA contrast, always</li>
+          <li><span class="fact-num">04</span> No unnecessary frameworks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-heading">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 id="process-heading">How a project moves</h2>
+          <p>Six stages, from discovery to audit.</p>
+        </div>
+        <ol class="process-steps">
+          <li><span class="step-index">1</span><h3>Discovery</h3><p>Define the brief and the "how might we."</p></li>
+          <li><span class="step-index">2</span><h3>Wireframe</h3><p>Grayscale, mobile-first, hierarchy over decoration.</p></li>
+          <li><span class="step-index">3</span><h3>Semantics</h3><p>HTML landmarks before a single line of CSS.</p></li>
+          <li><span class="step-index">4</span><h3>Style</h3><p>Grid and Flexbox, a two-font palette, real content.</p></li>
+          <li><span class="step-index">5</span><h3>Logic</h3><p>State and interactivity, built to be predictable.</p></li>
+          <li><span class="step-index">6</span><h3>Audit</h3><p>Performance, contrast, and keyboard access, checked.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section-inner contact-grid">
+        <div class="contact-copy">
+          <h2 id="contact-heading">Start a project</h2>
+          <p>Tell me what you're building. I reply within two business days.</p>
+          <p class="contact-direct">
+            <a href="mailto:hello@nadiareyes.dev">hello@nadiareyes.dev</a>
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+            <span class="field-error" id="nameError" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+            <span class="field-error" id="emailError" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="field-error" id="messageError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year">2026</span> Nadia Reyes. Built with semantic HTML, CSS, and vanilla JavaScript.</p>
+      <ul class="footer-links">
+        <li><a href="#top">Back to top</a></li>
+        <li><a href="mailto:hello@nadiareyes.dev">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
